@@ -1,7 +1,18 @@
+const { default: viteReact } = require("@vitejs/plugin-react");
+
 module.exports = {
-  content: ["./src/**/*.tsx"],
+  content: ["./src/**/*.tsx",
+  './pages/**/*.tsx',
+  './components/**/*.tsx'
+],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brand: {
+          500: '#8257e6'
+        }
+      }
+    },
   },
   plugins: [],
 }
